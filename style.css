@@ -64,7 +64,7 @@ html {
     color: #1D232C;
 }
 
-.navbar-menu-toggle{
+.navbar-menu-toggle {
     display: none;
 }
 
@@ -160,10 +160,10 @@ html {
 .slider-content button {
     padding: 10px 20px;
     margin-top: 10px;
-    
+
 }
 
-.slider-content a{
+.slider-content a {
     text-decoration: none;
     color: #1D232C;
 }
@@ -253,7 +253,7 @@ html {
     opacity: 0.6;
 }
 
-.new-arrival a{
+.new-arrival a {
     text-decoration: none;
     color: #1D232C;
 
@@ -343,7 +343,7 @@ html {
     padding: 5%;
 }
 
-.limited-offer-text a{
+.limited-offer-text a {
     text-decoration: none;
     color: #1D232C;
 
@@ -365,7 +365,7 @@ html {
 
 .initial-scroll-animate {
     transition: 2s;
-    
+
 }
 
 .reveal-scroll-animate {
@@ -384,7 +384,7 @@ html {
     align-items: center;
 }
 
-.news h2{
+.news h2 {
     margin-bottom: 3px;
 }
 
@@ -411,7 +411,7 @@ html {
     padding: 10px
 }
 
-.news a{
+.news a {
     text-decoration: none;
     color: #fff;
 }
@@ -428,7 +428,7 @@ html {
 
 .icon1 {
     width: 40px;
-    
+
 }
 
 
@@ -485,7 +485,7 @@ html {
     position: relative;
 }
 
-.navbar-search{
+.navbar-search {
     display: flex;
     justify-content: space-between;
     border: solid 1px black;
@@ -521,15 +521,15 @@ html {
     padding: 10px;
 }
 
-.navbar-search input{
+.navbar-search input {
     border: none;
     width: 90%;
 }
 
-.navbar-search input:focus{
+.navbar-search input:focus {
     outline: none;
-    
-    
+
+
 }
 
 .products-Container {
@@ -540,13 +540,26 @@ html {
     font-size: 1vw;
 }
 
-.product img{
-    width: 20vw;  
+.product img {
+    width: 20vw;
 }
 
-.product{
+.product {
     width: 20vw;
     margin-top: 2vw;
+}
+
+/*0 to 800px */
+
+@media screen and (max-width:900px) {
+    .product img {
+        width: 30vw;
+    }
+
+    .product {
+        width: 30vw;
+        margin-top: 2vw;
+    }
 }
 
 
@@ -604,4 +617,3 @@ html {
 .contact-form input[type="submit"]:hover {
     background-color: #0056b3;
 }
-
