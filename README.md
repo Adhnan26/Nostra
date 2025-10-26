@@ -38,17 +38,6 @@ The project demonstrates a mix of frontend development skills, including dynamic
 ~ Responsive UI: Uses media queries and flexible layouts to adapt the display to any screen size
 
 
-📦 Installation
-
-~ Clone the repository:
-
-git clone https://github.com/your-username/shirt-store.git
-
-
-~ Open index.html in any modern browser
-~ Explore all pages and interact with the filters
-
-
 💻 Technologies Used :
 ~ HTML5 – Structure and content of the website
 ~ CSS3 – Styling, layouts, and responsive design
@@ -68,5 +57,5 @@ git clone https://github.com/your-username/shirt-store.git
 Mohamed Adhnan – Aspiring Frontend Developer Completed this project through Error Makes Academy
 
 
-📌 How to View You can view the website directly here 👉 [  ]
+📌 How to View You can view the website directly here 👉 [ https://adhnan26.github.io/Nostra/ ]
 Thank you for visiting my Nostra website.
