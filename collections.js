@@ -43,62 +43,44 @@ checkboxes.forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
     var selectedValues = [];
 
-    // collect checked checkbox labels
+    // collect checked checkbox values
     checkboxes.forEach((cb) => {
       if (cb.checked) {
-        let labelText = cb.nextSibling.textContent
-          ? cb.nextSibling.textContent.trim().toUpperCase()
-          : cb.value.toUpperCase(); // fallback if no text node
-        selectedValues.push(labelText);
+        selectedValues.push(cb.value.toLowerCase());
       }
     });
 
     productlist.forEach((product, index) => {
-      var productname = product.querySelector("h1").textContent.toUpperCase();
+      var productname = product.querySelector("h1").textContent.toLowerCase();
 
       // Show all if no checkbox selected
       if (selectedValues.length === 0) {
         product.style.display = "block";
       } 
-
-      // Fixed "New Arrival" condition
-      else if (selectedValues.indexOf("NEW ARRIVAL") > -1 && selectedValues.indexOf("OLD") === -1) {
-        if (index < 3) {
-          product.style.display = "block";
-        } else {
-          product.style.display = "none";
-        }
+      // Only new
+      else if (selectedValues.includes("new") && !selectedValues.includes("old")) {
+        if (index < 3) product.style.display = "block";
+        else product.style.display = "none";
       } 
-
-      // "Old" condition
-      else if (selectedValues.indexOf("OLD") > -1 && selectedValues.indexOf("NEW ARRIVAL") === -1) {
-        if (index >= 3) {
-          product.style.display = "block";
-        } else {
-          product.style.display = "none";
-        }
+      // Only old
+      else if (selectedValues.includes("old") && !selectedValues.includes("new")) {
+        if (index >= 3) product.style.display = "block";
+        else product.style.display = "none";
       } 
-
-      //If both "New Arrival" & "Old" are checked → show all
-      else if (selectedValues.indexOf("NEW ARRIVAL") > -1 && selectedValues.indexOf("OLD") > -1) {
+      // Both new & old
+      else if (selectedValues.includes("new") && selectedValues.includes("old")) {
         product.style.display = "block";
       } 
-
-      //Normal checkboxes like colors / occasions
+      // Normal checkboxes like colors / occasions
       else {
         var matchFound = false;
         selectedValues.forEach((value) => {
-          if (productname.indexOf(value) > -1) {
-            matchFound = true;
-          }
+          if (productname.indexOf(value) > -1) matchFound = true;
         });
 
-        if (matchFound) {
-          product.style.display = "block";
-        } else {
-          product.style.display = "none";
-        }
+        product.style.display = matchFound ? "block" : "none";
       }
     });
   });
 });
+
