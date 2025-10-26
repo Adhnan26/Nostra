@@ -55,9 +55,18 @@ git clone https://github.com/your-username/shirt-store.git
 ~ JavaScript (Vanilla) – Interactivity and dynamic product filtering
 ~ Optional Libraries: Can be extended with Bootstrap or other CSS frameworks
 
+
 🔮 Future Improvements :
 ~ Add product details page with sizes, prices, and descriptions
 ~ Implement shopping cart and checkout system
 ~ Integrate backend for real-time product data and inventory management
 ~ Include search functionality for faster product lookup
 ~ Add animations or transitions for better user experience
+
+
+🔹 Author
+Mohamed Adhnan – Aspiring Frontend Developer Completed this project through Error Makes Academy
+
+
+📌 How to View You can view the website directly here 👉 [  ]
+Thank you for visiting my Nostra website.
