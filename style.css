@@ -455,7 +455,7 @@ html {
 }
 
 
-/*0 to 800px */
+/*0 to 900px */
 
 @media screen and (max-width:900px) {
     .navbar-menu-toggle {
@@ -464,6 +464,14 @@ html {
 
     .navbar-links {
         display: none;
+    }
+
+    .offer-bar p {
+        font-size: medium;
+    }
+
+    .offer-bar i {
+        margin-left: 4vw;
     }
 }
 
@@ -549,7 +557,7 @@ html {
     margin-top: 2vw;
 }
 
-/*0 to 800px */
+/*0 to 900px */
 
 @media screen and (max-width:900px) {
     .product img {
@@ -584,6 +592,7 @@ html {
 .contact-form label {
     display: block;
     margin-bottom: 1vw;
+    margin-top: 1vw;
 
 }
 
@@ -594,13 +603,15 @@ html {
     border: 1px solid #dddddd;
     border-radius: 4px;
     margin-bottom: 1vw;
-    font-size: 1vw;
+    font-size: 1.5vw;
 
 }
 
 .contact-form textarea {
     resize: vertical;
-    height: 10vh;
+    height: 15vh;
+    margin-bottom: 0;
+    font-size: ;
 }
 
 .contact-form input[type="submit"] {
@@ -612,8 +623,26 @@ html {
     cursor: pointer;
     font-size: 16px;
     background-color: #0056b3;
+    
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #2063ab;
+}
+
+.contact-form span{
+    color: red;
+    display: none;
+}
+
+.contact-form p{
+    text-align: end;
+}
+
+@media screen and (max-width:900px) {
+
+    .contact-form input[type="text"],
+    .contact-form textarea {
+        font-size: 3vw;
+    }
 }
